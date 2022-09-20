@@ -6,10 +6,6 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 100)
 
 background = pygame.Surface(window.get_size())
-ts, w, h, c1, c2 = 50, * window.get_size(), (32, 32, 32), (64, 64, 64)
-tiles = [((x*ts, y*ts, ts, ts), c1 if (x+y) % 2 == 0 else c2) for x in range((w+ts-1)//ts) for y in range((h+ts-1)//ts)]
-for rect, color in tiles:
-    pygame.draw.rect(background, color, rect)
 
 text = 'Hello World'
 text_len = 0
