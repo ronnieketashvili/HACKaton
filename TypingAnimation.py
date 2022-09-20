@@ -7,7 +7,7 @@ font = pygame.font.SysFont(None, 100)
 
 background = pygame.Surface(window.get_size())
 
-text = 'Hello World'
+text = 'ALLO'
 text_len = 0
 typewriter_event = pygame.USEREVENT+1
 pygame.time.set_timer(typewriter_event, 100)
