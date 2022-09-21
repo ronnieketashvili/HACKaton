@@ -71,7 +71,7 @@ def question_4():
 
 
 def question_5():
-    question = "Looks like there was an error and your printer printed 647298473 extra pages.\nYou need to get rid of it" \
+    question = "Looks like there was an error and your printer printed 647298473 extra pages.\nYou need to get rid of it\n" \
                "A: Go to the floor recycling bin\n" \
                "B: Go to my trash can? What else you want me to do?"
 
