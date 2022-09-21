@@ -9,8 +9,8 @@ def question_1():
 
     answer = Inputs.valid_answer()
 
-    if answer == 'a':
-        main.score += 5
+    if answer == 'b':
+        main.score -= 5
 
 
 def question_2():
@@ -22,11 +22,18 @@ def question_2():
 
     answer = Inputs.valid_answer()
 
-    if answer == 'a':
-        main.score += 5
+    if answer == 'b':
+        main.score -= 5
 
 #car
 def question_3():
-    print("")
+    print("OK now you really dont have time!, How are you going to get to work? "
+          "A: Your private car\n"
+          "B: Your bike\n")
+
+    answer = Inputs.valid_answer()
+
+    if answer == 'a':
+        main.score -= 5
 
 #air co
