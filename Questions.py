@@ -102,6 +102,8 @@ def question_3():
                "A: Your private car\n" \
                "B: Your bike\n"
 
+    answer_a =
+
     return question
 
 
