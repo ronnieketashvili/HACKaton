@@ -19,7 +19,6 @@ def question_1():
               "and you couldn't be bothered to pick up one bag, not cool.")
         main.score -= 5
 
-
 def question_2():
     print("Looks like you got back later than expected from your morning run. "
           "You don't have too much time to drink coffee, but at least you can"
@@ -52,9 +51,29 @@ def question_3():
 
     if answer == 'a':
         print(random.choice(random_answer))
+        main.score -= 5
 
     else:
         print("Diesel exhaust causes cancer, thanks for not using it.")
 
 def question_4():
-    pass
+    print("its sooooo hot in here, even my GPU is about to go up in flames, what are you going to do?\n"
+          "A: Turn on the AC"
+          "B: Dont turn on the AC")
+
+    answer = Inputs.valid_answer()
+
+    if answer == 'a':
+        print("Okay, turn it on. But just so you know, electrical waves cause- ", end=" ")
+        print("headaches, dizziness, nausea, difficulty concentrating, "
+              "memory loss, irritability, depression, anxiety, insomnia, fatigue, weakness, tremors, muscle spasms, "
+              "numbness, tingling, altered reflexes, muscle and joint pain, "
+              "leg/foot pain, “Flue-like” symptoms, fever, palpitations, "
+              "arrhythmias, pain or pressure in the chest, low or high blood pressure, "
+              "slow or fast heart rate, shortness of breath,  "
+              "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, "
+              "pressure in/behind the eyes, deteriorating vision, floaters, cataracts.")
+        main.score -= 5
+
+    else:
+        print("Nice, you avoided the ")
