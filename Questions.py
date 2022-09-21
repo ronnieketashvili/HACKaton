@@ -1,15 +1,21 @@
 def scene_1():
     return ("I see you're awake! good, We have a lot of choices to make!.. no, I mean things to do!", 0)
 
+
 def scene_7():
-    return ("You may be going to sleep now, but right now billions of people are waking up.", 0)
+    return ("Now it's time to make the real decisions in the real world\nBut remember that you aren't the only one who makes those decisions.", 0)
+
+
+def scene_2():
+    return ("Ye... I think you should buy other clothes rather than blue too.", 0)
+
 
 def question_1():
     question = "Look! There's some trash over there, what are you going to do with it?\n" \
                "A: Pick it up\n" \
                "B: Leave it there\n "
 
-    answer_a = "Nice, Plastic waste kills up to one million seabirds, 100,000 sea mammals, \n" \
+    answer_a = "Plastic waste kills up to one million seabirds, 100,000 sea mammals, \n" \
                "marine turtles and countless fish each year, nice of you to save some turtles."
 
     answer_b = "Uh, more than 8 million tons of plastic enter the oceans each year- \n" \
@@ -60,8 +66,8 @@ def question_4():
                            "leg/foot pain, “Flue-like” symptoms, fever, palpitations, \n" \
                            "arrhythmias, pain or pressure in the chest, low or high blood pressure, \n" \
                            "slow or fast heart rate, shortness of breath,  \n" \
-                           "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing,\n pain or burning in the eyes," \
-                           "pressure in/behind the eyes,\n deteriorating vision, floaters, cataracts."
+                           "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing,\npain or burning in the eyes," \
+                           "pressure in/behind the eyes,\ndeteriorating vision, floaters, cataracts."
 
     answer_a = "Nice, you avoided the side effects of electrical waves, which by the way are- \n" + electric_waves_effet
 
@@ -78,7 +84,7 @@ def question_5():
     answer_a = "good, you just saved some trees"
 
     answer_b = "What do you mean 'what else you want me to do'? I want you to think about the fact\n" \
-               " that In the last 40 years, paper usage has grown 400%.\n This means that over two million trees are felled every day for global\n paper consumption, \n" \
+               " that In the last 40 years, paper usage has grown 400%.\nThis means that over two million trees are felled every day for global\npaper consumption,\n" \
                "meaning four billion trees are cut every year to serve our paper needs."
 
     return (question, answer_a, answer_b)
@@ -90,13 +96,13 @@ def question_6():
                "B: Buy fast fashion"
 
     answer_a = "That's good, we should not support an industry that encourages customers\nto keep buying the latest trends, and as a result " \
-               "The quantity of unworn clothing\nin the average fashionista’s closet just keeps increasing"
+               "The quantity of unworn clothing\nin the average fashionista’s closet just keeps increasing."
 
     answer_b = "Fast fashion? Did you know that according to the International Union for Conservation of Nature,\n" \
-               "35 percent of microplastics that enter the ocean come from synthetic fibers..\n I hope you picked up that plastic bug"
+               "35 percent of microplastics that enter the ocean come from synthetic fibers..\nI hope you picked up that plastic bug."
 
     return (question, answer_a, answer_b)
 
 
-question_list = ['', scene_1(),'', '', question_1(), '', question_2(), '', question_3(),'', question_4(),'', question_5(),'',  question_6(), '', '', '', scene_7()]
-picture = ["images/20.jpg", "images/19.jpg", "images/5.png", "images/8.jpg", "images/9.png", "images/10.png", "images/12.jpg", "images/14.jpg", "images/19.jpg", "images/20.jpg"]
+question_list = ['', '', scene_1(), '', '', scene_2(), '', '', question_1(), '', question_2(), '', question_3(), '', question_4(), '', question_5(), '',  question_6(), '', '', scene_7()]
+picture = ["images/20.jpg", "images/19.jpg","images/1.jpg", "images/2.jpg", "images/3.jpg", "images/5.png", "images/8.jpg", "images/9.png", "images/10.png", "images/12.jpg", "images/14.jpg", "images/19.jpg", "images/20.jpg"]
