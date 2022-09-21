@@ -9,7 +9,7 @@ background = pygame.Surface(window.get_size())
 
 text = 'ALLO'
 text_len = 0
-typewriter_event = pygame.USEREVENT+1
+typewriter_event = pygame.USEREVENT + 1
 pygame.time.set_timer(typewriter_event, 100)
 text_surf = None
 
@@ -31,4 +31,3 @@ while run:
     pygame.display.flip()
 
 pygame.quit()
-exit()
