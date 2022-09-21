@@ -19,6 +19,7 @@ def question_1():
               "and you couldn't be bothered to pick up one bag, not cool.")
         main.score -= 5
 
+
 def question_2():
     print("Looks like you got back later than expected from your morning run. "
           "You don't have too much time to drink coffee, but at least you can"
@@ -39,6 +40,7 @@ def question_2():
               "it produces Methane(the greenhouse gas) as it breaks down, maybe we'll get to live a few more "
               "years until the sun collapses on us, thanks to your coffee.")
 
+
 def question_3():
     random_answer = ["About 11 million cars were designed to cheat air pollution tests, did you cheat yours?",
                      "91% of the World’s Population Are Breathing in Polluted Air Every Day, happy to Happy to contribute?",
@@ -55,6 +57,7 @@ def question_3():
 
     else:
         print("Diesel exhaust causes cancer, thanks for not using it.")
+
 
 def question_4():
     print("its sooooo hot in here, even my GPU is about to go up in flames, what are you going to do?\n"
@@ -76,4 +79,17 @@ def question_4():
         main.score -= 5
 
     else:
-        print("Nice, you avoided the ")
+        print("Nice, you avoided the side effects of electrical waves, which by the way are- ")
+        print("headaches, dizziness, nausea, difficulty concentrating, "
+              "memory loss, irritability, depression, anxiety, insomnia, fatigue, weakness, tremors, muscle spasms, "
+              "numbness, tingling, altered reflexes, muscle and joint pain, "
+              "leg/foot pain, “Flue-like” symptoms, fever, palpitations, "
+              "arrhythmias, pain or pressure in the chest, low or high blood pressure, "
+              "slow or fast heart rate, shortness of breath,  "
+              "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, "
+              "pressure in/behind the eyes, deteriorating vision, floaters, cataracts.")
+
+
+def question_5():
+    print("UH looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it.\n"
+          "A: go to my trash can? ")
