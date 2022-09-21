@@ -21,9 +21,16 @@ def question_1():
 
     question = "Oh.. There some trash over there, what are you going to do with it?\n" \
                "A: Pick it up\n" \
-               "B: Leave it there\n" \
- \
-    return question
+               "B: Leave it there\n "
+
+    answer_a = "Nice, Plastic waste kills up to one million seabirds, 100,000 sea mammals, \n" \
+               "marine turtles and countless fish each year, nice of you to save some turtles."
+
+    answer_b = "Uh, more than 8 million tons of plastic enter the oceans each year- \n" \
+               "equal to dumping a garbage truck of plastic every minute, \n" \
+               "and you couldn't be bothered to pick up one bag, not cool."
+
+    return (question, answer_a, answer_b)
 
 
 def question_2():
@@ -55,15 +62,23 @@ def question_2():
     question = "Looks like you got back later than expected from your morning run.\n" \
                "You don't have too much time to drink coffee, but at least you can\n" \
                "choose the cup you will drink it from.\n" \
-               "A: Cardboard cup\n" \
-               "B: Glass cup\n" \
- \
-        # answer = Inputs.valid_answer()
+               "A: Glass cup\n" \
+               "B: Cardboard cup\n" \
+
+    answer_a = "Since cardboard is biodegradable, \n" \
+               "it produces Methane(the greenhouse gas) as it breaks down, maybe we'll get to live a few more \n" \
+               "years until the sun collapses on us, thanks to your coffee."
+
+    answer_b = "Cardboard is made from wood pulp and cellulose fibers,\n" \
+               "which means that in order to make new cardboard-\n" \
+               "it is necessary to cut down new trees.. you think your coffee is that important?."
+
+    # answer = Inputs.valid_answer()
     #
     # if answer == 'b':
     #     main.score -= 5
 
-    return question
+    return (question, answer_a, answer_b)
 
 
 def question_3():
@@ -86,6 +101,8 @@ def question_3():
     question = "OK now you really don't have time, How are you going to get to work?\n" \
                "A: Your private car\n" \
                "B: Your bike\n"
+
+    answer_a =
 
     return question
 
@@ -122,18 +139,21 @@ def question_4():
 
 
 def question_5():
-    question = "UH looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it" \
+    # question = "UH looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it" \
+    #            "A: Go to the floor recycling bin\n" \
+    #            "B: Go to my trash can? What else you want me to do?"
+    #
+    # answer = Inputs.valid_answer()
+    #
+    # if answer == 'a':
+    #     print("good, you just saved some trees")
+    # else:
+    #     print("What do you mean 'what else you want me to do'? I want you to think about the fact that "
+    #           "In the last 40 years, paper usage has grown 400%. This means that over two million trees are felled every day for global paper consumption, "
+    #           "meaning four billion trees are cut every year to serve our paper needs.")
+    question = "UH looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it\n" \
                "A: Go to the floor recycling bin\n" \
                "B: Go to my trash can? What else you want me to do?"
-
-    answer = Inputs.valid_answer()
-
-    if answer == 'a':
-        print("good, you just saved some trees")
-    else:
-        print("What do you mean 'what else you want me to do'? I want you to think about the fact that "
-              "In the last 40 years, paper usage has grown 400%. This means that over two million trees are felled every day for global paper consumption, "
-              "meaning four billion trees are cut every year to serve our paper needs.")
 
     return question
 
