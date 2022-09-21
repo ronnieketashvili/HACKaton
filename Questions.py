@@ -1,6 +1,9 @@
 def scene_1():
     return "I see you're awake! good, We have a lot of choices to make!.. no, I mean things to do!"
 
+def scene_7():
+    return "You may be going to sleep now, but right now billions of people are waking up."
+
 def question_1():
     question = "Look! There's some trash over there, what are you going to do with it?\n" \
                "A: Pick it up\n" \
@@ -41,7 +44,7 @@ def question_3():
 
     answer_a = "Diesel exhaust causes cancer, thanks for not using it."
 
-    answer_b = "91% of the World’s Population Are Breathing in Polluted Air Every Day, happy to Happy to contribute?"
+    answer_b = "91% of the World’s Population Are Breathing in Polluted Air Every Day,\nhappy to Happy to contribute?"
 
     return (question, answer_a, answer_b)
 
@@ -95,6 +98,6 @@ def question_6():
     return (question, answer_a, answer_b)
 
 
-question_list = [question_1(), '', question_2(), '', question_3(), '', question_4(), '', question_5(), '', question_6()]
+question_list = [question_1(), '', question_2(), '', question_3(), '', question_4(), '', question_5(), '', question_6(), scene_7()]
 for ok in question_list:
     print(ok)
