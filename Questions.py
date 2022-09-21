@@ -21,7 +21,7 @@ def question_1():
 
     question = "Oh.. There some trash over there, what are you going to do with it?\n" \
                "A: Pick it up\n" \
-               "B: Leave it there\n"
+               "B: Leave it there\n "
 
     answer_a = "Nice, Plastic waste kills up to one million seabirds, 100,000 sea mammals, \n" \
                "marine turtles and countless fish each year, nice of you to save some turtles."
