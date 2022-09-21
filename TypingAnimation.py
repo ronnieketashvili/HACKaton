@@ -9,6 +9,7 @@ def print_text():
     text_len = 0
     typewriter_event = pygame.USEREVENT + 1
     pygame.time.set_timer(typewriter_event, 20)
+    index = 0
 
     for questions in questions_tuples:
         if len(questions) != 0:
@@ -17,12 +18,11 @@ def print_text():
             answer_b = questions[2].splitlines()
             input = ''
             row = 0
-
+            window.blit(background, (0, 0))
             for line in question_lines:
                 text = line
                 row += 20
                 run = True
-
                 while run:
                     clock.tick(60)
                     for event in pygame.event.get():
@@ -53,6 +53,22 @@ def print_text():
 
             window.blit(background, (0, 0))
             print(input)
+        else:
+            surface = pygame.Surface((700, 700))
+            surface = pygame.display.set_mode((700, 700))
+            pygame.draw.rect(surface, (0, 0, 0), pygame.Rect(0, 0, 700, 700))
+
+            background_img = pygame.image.load(picture_list[index]).convert_alpha()
+            index += 1
+            background_img = pygame.transform.scale(background_img, (700, 700))
+            window.blit(background_img, (0, 0))
+            pygame.display.flip()
+
+            run = True
+            while run:
+                for event in pygame.event.get():
+                    if event.type == pygame.KEYDOWN:
+                        run = False
 
     pygame.quit()
 
@@ -100,5 +116,6 @@ font = pygame.font.SysFont('microsoftyibaiti', 20)  # setting the font of the te
 background = pygame.Surface(window.get_size())  # creating the surface
 
 questions_tuples = Questions.question_list
+picture_list = Questions.picture
 
 print_text()

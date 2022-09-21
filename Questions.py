@@ -1,5 +1,5 @@
 def scene_1():
-    return "I see you're awake! good, We have a lot of choices to make!.. no, I mean things to do!"
+    return ("I see you're awake! good, We have a lot of choices to make!..\n no, I mean things to do!")
 
 def question_1():
     question = "Look! There's some trash over there, what are you going to do with it?\n" \
@@ -95,6 +95,5 @@ def question_6():
     return (question, answer_a, answer_b)
 
 
-question_list = [question_1(), '', question_2(), '', question_3(), '', question_4(), '', question_5(), '', question_6()]
-for ok in question_list:
-    print(ok)
+question_list = ['', scene_1(),'', '', question_1(), '', question_2(), '', question_3(),'', question_4(),'', question_5(),'',  question_6(), '', '', '']
+picture = ["images/20.jpg", "images/19.jpg", "images/5.png", "images/8.jpg", "images/9.png", "images/10.png", "images/12.jpg", "images/14.jpg", "images/15.jpg", "images/19.jpg", "images/20.jpg"]
