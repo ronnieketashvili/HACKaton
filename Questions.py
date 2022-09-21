@@ -137,6 +137,18 @@ def question_5():
 
     return question
 
+def question_6():
+    question = "get in user!! we are going shopping!!!\n" \
+               "A: Buy slow fashion\n"\
+               "B: Buy fast fashion"
+
+    answer_a = "Ohh that's good, we should not support an industry that encourages customers to keep buying the latest trends, and as a result " \
+               "The quantity of unworn clothing in the average fashionista’s closet just keeps increasing"
+
+    answer_b = "fast fashion? Did you know that according to the International Union for Conservation of Nature, " \
+               "35 percent of microplastics that enter the ocean come from synthetic fibers.. I hope you picked up that plastic bug"
+
+
 
 question_list = [question_1(), '', question_2(), '', question_3(), '']
 for ok in question_list:
