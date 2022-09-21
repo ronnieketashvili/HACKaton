@@ -4,20 +4,27 @@ import random
 
 
 def question_1():
-    print("Oh.. There some trash over there, what are you going to do with it?\n"
-          "A: Pick it up\n"
-          "B: Leave it there\n")
+    # print("Oh.. There some trash over there, what are you going to do with it?\n"
+    #       "A: Pick it up\n"
+    #       "B: Leave it there\n")
+    #
+    # answer = Inputs.valid_answer()
+    #
+    # if answer == 'a':
+    #     print("Nice, Plastic waste kills up to one million seabirds, 100,000 sea mammals, "
+    #           "marine turtles and countless fish each year, nice of you to save some turtles.")
+    # else:
+    #     print("Uh, more than 8 million tons of plastic enter the oceans each year- "
+    #           "equal to dumping a garbage truck of plastic every minute, "
+    #           "and you couldn't be bothered to pick up one bag, not cool.")
+    #     main.score -= 5
 
-    answer = Inputs.valid_answer()
+    text_str = "Oh.. There some trash over there, what are you going to do with it?\n" \
+                "A: Pick it up\n" \
+                "B: Leave it there\n" \
 
-    if answer == 'a':
-        print("Nice, Plastic waste kills up to one million seabirds, 100,000 sea mammals, "
-              "marine turtles and countless fish each year, nice of you to save some turtles.")
-    else:
-        print("Uh, more than 8 million tons of plastic enter the oceans each year- "
-              "equal to dumping a garbage truck of plastic every minute, "
-              "and you couldn't be bothered to pick up one bag, not cool.")
-        main.score -= 5
+    return text_str
+
 
 
 def question_2():
@@ -46,7 +53,7 @@ def question_2():
     #       "A: Cardboard cup\n"
     #       "B: Glass cup\n")
 
-    text_str = "Looks like you got back later than expected from your morning run.\n " \
+    text_str = "Looks like you got back later than expected from your morning run.\n" \
           "You don't have too much time to drink coffee, but at least you can\n" \
           "choose the cup you will drink it from.\n" \
           "A: Cardboard cup\n" \
