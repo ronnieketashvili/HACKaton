@@ -1,9 +1,6 @@
 def scene_1():
     return "I see you're awake! good, We have a lot of choices to make!.. no, I mean things to do!"
 
-
-
-
 def question_1():
     question = "Look! There's some trash over there, what are you going to do with it?\n" \
                "A: Pick it up\n" \
