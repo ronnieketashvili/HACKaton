@@ -21,24 +21,43 @@ def question_1():
 
 
 def question_2():
-    print("Looks like you got back later than expected from your morning run. "
-          "You don't have too much time to drink coffee, but at least you can"
-          " choose the cup you will drink it from.\n"
-          "A: Cardboard cup\n"
-          "B: Glass cup\n")
+    # print("Looks like you got back later than expected from your morning run. "
+    #       "You don't have too much time to drink coffee, but at least you can"
+    #       " choose the cup you will drink it from.\n"
+    #       "A: Cardboard cup\n"
+    #       "B: Glass cup\n")
+    #
+    # answer = Inputs.valid_answer()
+    #
+    # if answer == 'a':
+    #     print("Cardboard is made from wood pulp and cellulose fibers, "
+    #           "which means that in order to make new cardboard- "
+    #           "it is necessary to cut down new trees.. you think your coffee is that important?.")
+    #     main.score -= 5
+    #
+    # else:
+    #     print("Since cardboard is biodegradable, "
+    #           "it produces Methane(the greenhouse gas) as it breaks down, maybe we'll get to live a few more "
+    #           "years until the sun collapses on us, thanks to your coffee.")
 
-    answer = Inputs.valid_answer()
+    # print("Looks like you got back later than expected from your morning run.\n "
+    #       "You don't have too much time to drink coffee, but at least you can\n"
+    #       "choose the cup you will drink it from.\n"
+    #       "A: Cardboard cup\n"
+    #       "B: Glass cup\n")
 
-    if answer == 'a':
-        print("Cardboard is made from wood pulp and cellulose fibers, "
-              "which means that in order to make new cardboard- "
-              "it is necessary to cut down new trees.. you think your coffee is that important?.")
-        main.score -= 5
+    text_str = "Looks like you got back later than expected from your morning run.\n " \
+          "You don't have too much time to drink coffee, but at least you can\n" \
+          "choose the cup you will drink it from.\n" \
+          "A: Cardboard cup\n" \
+          "B: Glass cup\n" \
 
-    else:
-        print("Since cardboard is biodegradable, "
-              "it produces Methane(the greenhouse gas) as it breaks down, maybe we'll get to live a few more "
-              "years until the sun collapses on us, thanks to your coffee.")
+    # answer = Inputs.valid_answer()
+    #
+    # if answer == 'b':
+    #     main.score -= 5
+
+    return text_str
 
 
 def question_3():
