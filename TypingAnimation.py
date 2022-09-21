@@ -13,9 +13,12 @@ def print_text():
 
     for questions in questions_tuples:
         if len(questions) != 0:
-            question_lines = questions[0].splitlines()
-            answer_a = questions[1].splitlines()
-            answer_b = questions[2].splitlines()
+            if len(questions) > 2:
+                question_lines = questions[0].splitlines()
+                answer_a = questions[1].splitlines()
+                answer_b = questions[2].splitlines()
+            else:
+                question_lines = questions[0].splitlines()
             input = ''
             row = 0
             window.blit(background, (0, 0))
@@ -36,20 +39,26 @@ def print_text():
                     if text_surf:
                         window.blit(text_surf, (0, row))
                     pygame.display.flip()
-
-            while input == '' and len(question_lines) != 0:
-                for event in pygame.event.get():
-                    if event.type == pygame.QUIT:
-                        pygame.quit()
-                    elif event.type == pygame.KEYDOWN:
-                        if event.key == pygame.K_a:
-                            input = 'a'
-                            print_answer(answer_a)
-                            break
-                        elif event.key == pygame.K_b:
-                            input = 'b'
-                            print_answer(answer_b)
-                            break
+            if len(questions) > 2:
+                while input == '' and len(question_lines) != 0:
+                    for event in pygame.event.get():
+                        if event.type == pygame.QUIT:
+                            pygame.quit()
+                        elif event.type == pygame.KEYDOWN:
+                            if event.key == pygame.K_a:
+                                input = 'a'
+                                print_answer(answer_a)
+                                break
+                            elif event.key == pygame.K_b:
+                                input = 'b'
+                                print_answer(answer_b)
+                                break
+            else:
+                run = True
+                while run:
+                    for event in pygame.event.get():
+                        if event.type == pygame.KEYDOWN:
+                            run = False
 
             window.blit(background, (0, 0))
             print(input)

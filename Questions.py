@@ -1,8 +1,8 @@
 def scene_1():
-    return "I see you're awake! good, We have a lot of choices to make!.. no, I mean things to do!"
+    return ("I see you're awake! good, We have a lot of choices to make!.. no, I mean things to do!", 0)
 
 def scene_7():
-    return "You may be going to sleep now, but right now billions of people are waking up."
+    return ("You may be going to sleep now, but right now billions of people are waking up.", 0)
 
 def question_1():
     question = "Look! There's some trash over there, what are you going to do with it?\n" \
@@ -44,7 +44,7 @@ def question_3():
 
     answer_a = "Diesel exhaust causes cancer, thanks for not using it."
 
-    answer_b = "91% of the World’s Population Are Breathing in Polluted Air Every Day,\nhappy to Happy to contribute?"
+    answer_b = "91% of the World’s Population Are Breathing in Polluted Air Every Day,\nHappy to contribute?"
 
     return (question, answer_a, answer_b)
 
@@ -60,8 +60,8 @@ def question_4():
                            "leg/foot pain, “Flue-like” symptoms, fever, palpitations, \n" \
                            "arrhythmias, pain or pressure in the chest, low or high blood pressure, \n" \
                            "slow or fast heart rate, shortness of breath,  \n" \
-                           "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, \n" \
-                           "pressure in/behind the eyes, deteriorating vision, floaters, cataracts."
+                           "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing,\n pain or burning in the eyes," \
+                           "pressure in/behind the eyes,\n deteriorating vision, floaters, cataracts."
 
     answer_a = "Nice, you avoided the side effects of electrical waves, which by the way are- \n" + electric_waves_effet
 
@@ -71,14 +71,14 @@ def question_4():
 
 
 def question_5():
-    question = "Looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it\n" \
+    question = "Looks like there was an error and your printer printed 647298473 extra pages.\nYou need to get rid of it" \
                "A: Go to the floor recycling bin\n" \
                "B: Go to my trash can? What else you want me to do?"
 
     answer_a = "good, you just saved some trees"
 
     answer_b = "What do you mean 'what else you want me to do'? I want you to think about the fact\n" \
-               " that In the last 40 years, paper usage has grown 400%. This means that over two million trees are felled every day for global paper consumption, \n" \
+               " that In the last 40 years, paper usage has grown 400%.\n This means that over two million trees are felled every day for global\n paper consumption, \n" \
                "meaning four billion trees are cut every year to serve our paper needs."
 
     return (question, answer_a, answer_b)
@@ -89,15 +89,14 @@ def question_6():
                "A: Buy slow fashion\n" \
                "B: Buy fast fashion"
 
-    answer_a = "That's good, we should not support an industry that encourages customers to keep buying the latest trends, and as a result " \
-               "The quantity of unworn clothing in the average fashionista’s closet just keeps increasing"
+    answer_a = "That's good, we should not support an industry that encourages customers\nto keep buying the latest trends, and as a result " \
+               "The quantity of unworn clothing\nin the average fashionista’s closet just keeps increasing"
 
-    answer_b = "Fast fashion? Did you know that according to the International Union for Conservation of Nature, " \
-               "35 percent of microplastics that enter the ocean come from synthetic fibers.. I hope you picked up that plastic bug"
+    answer_b = "Fast fashion? Did you know that according to the International Union for Conservation of Nature,\n" \
+               "35 percent of microplastics that enter the ocean come from synthetic fibers..\n I hope you picked up that plastic bug"
 
     return (question, answer_a, answer_b)
 
 
-question_list = [question_1(), '', question_2(), '', question_3(), '', question_4(), '', question_5(), '', question_6(), scene_7()]
-for ok in question_list:
-    print(ok)
+question_list = ['', scene_1(),'', '', question_1(), '', question_2(), '', question_3(),'', question_4(),'', question_5(),'',  question_6(), '', '', '', scene_7()]
+picture = ["images/20.jpg", "images/19.jpg", "images/5.png", "images/8.jpg", "images/9.png", "images/10.png", "images/12.jpg", "images/14.jpg", "images/19.jpg", "images/20.jpg"]
