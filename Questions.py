@@ -19,10 +19,10 @@ def question_1():
     #           "and you couldn't be bothered to pick up one bag, not cool.")
     #     main.score -= 5
 
-    question = "Oh.. There some trash over there, what are you going to do with it?\n"\
-               "A: Pick it up\n"\
-               "B: Leave it there\n"\
-
+    question = "Oh.. There some trash over there, what are you going to do with it?\n" \
+               "A: Pick it up\n" \
+               "B: Leave it there\n" \
+ \
     return question
 
 
@@ -58,7 +58,7 @@ def question_2():
                "A: Cardboard cup\n" \
                "B: Glass cup\n" \
  \
-    # answer = Inputs.valid_answer()
+        # answer = Inputs.valid_answer()
     #
     # if answer == 'b':
     #     main.score -= 5
@@ -122,9 +122,9 @@ def question_4():
 
 
 def question_5():
-    question = "UH looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it"\
-     "A: Go to the floor recycling bin\n"\
-     "B: Go to my trash can? What else you want me to do?"
+    question = "UH looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it" \
+               "A: Go to the floor recycling bin\n" \
+               "B: Go to my trash can? What else you want me to do?"
 
     answer = Inputs.valid_answer()
 
@@ -136,7 +136,6 @@ def question_5():
               "meaning four billion trees are cut every year to serve our paper needs.")
 
     return question
-
 
 
 question_list = [question_1(), '', question_2(), '', question_3(), '']
