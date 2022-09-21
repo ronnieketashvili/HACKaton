@@ -102,40 +102,67 @@ def question_3():
                "A: Your private car\n" \
                "B: Your bike\n"
 
-    answer_a =
+    answer_a = "Diesel exhaust causes cancer, thanks for not using it."
 
-    return question
+    answer_b = "91% of the World’s Population Are Breathing in Polluted Air Every Day, happy to Happy to contribute?"
+
+    return (question, answer_a, answer_b)
 
 
 def question_4():
-    print("its sooooo hot in here, even my GPU is about to go up in flames, what are you going to do?\n"
-          "A: Turn on the AC"
-          "B: Dont turn on the AC")
+    # print("its sooooo hot in here, even my GPU is about to go up in flames, what are you going to do?\n"
+    #       "A: Turn on the AC"
+    #       "B: Dont turn on the AC")
+    #
+    # answer = Inputs.valid_answer()
+    #
+    # if answer == 'a':
+    #     print("Okay, turn it on. But just so you know, electrical waves cause- ", end=" ")
+    #     print("headaches, dizziness, nausea, difficulty concentrating, "
+    #           "memory loss, irritability, depression, anxiety, insomnia, fatigue, weakness, tremors, muscle spasms, "
+    #           "numbness, tingling, altered reflexes, muscle and joint pain, "
+    #           "leg/foot pain, “Flue-like” symptoms, fever, palpitations, "
+    #           "arrhythmias, pain or pressure in the chest, low or high blood pressure, "
+    #           "slow or fast heart rate, shortness of breath,  "
+    #           "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, "
+    #           "pressure in/behind the eyes, deteriorating vision, floaters, cataracts.")
+    #     main.score -= 5
+    #
+    # else:
+    #     print("Nice, you avoided the side effects of electrical waves, which by the way are- ")
+    #     print("headaches, dizziness, nausea, difficulty concentrating, "
+    #           "memory loss, irritability, depression, anxiety, insomnia, fatigue, weakness, tremors, muscle spasms, "
+    #           "numbness, tingling, altered reflexes, muscle and joint pain, "
+    #           "leg/foot pain, “Flue-like” symptoms, fever, palpitations, "
+    #           "arrhythmias, pain or pressure in the chest, low or high blood pressure, "
+    #           "slow or fast heart rate, shortness of breath,  "
+    #           "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, "
+    #           "pressure in/behind the eyes, deteriorating vision, floaters, cataracts.")
+    question = "its sooooo hot in here, even my GPU is about to go up in flames, what are you going to do?\n" \
+               "A: Turn on the AC\n" \
+               "B: Dont turn on the AC"
 
-    answer = Inputs.valid_answer()
+    answer_a = "Nice, you avoided the side effects of electrical waves, which by the way are- \n" \
+               "headaches, dizziness, nausea, difficulty concentrating, \n" \
+               "memory loss, irritability, depression, anxiety, insomnia, fatigue, weakness, tremors, muscle spasms, \n" \
+               "numbness, tingling, altered reflexes, muscle and joint pain, \n" \
+               "leg/foot pain, “Flue-like” symptoms, fever, palpitations, \n" \
+               "arrhythmias, pain or pressure in the chest, low or high blood pressure, \n" \
+               "slow or fast heart rate, shortness of breath,  \n" \
+               "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, \n" \
+               "pressure in/behind the eyes, deteriorating vision, floaters, cataracts."
 
-    if answer == 'a':
-        print("Okay, turn it on. But just so you know, electrical waves cause- ", end=" ")
-        print("headaches, dizziness, nausea, difficulty concentrating, "
-              "memory loss, irritability, depression, anxiety, insomnia, fatigue, weakness, tremors, muscle spasms, "
-              "numbness, tingling, altered reflexes, muscle and joint pain, "
-              "leg/foot pain, “Flue-like” symptoms, fever, palpitations, "
-              "arrhythmias, pain or pressure in the chest, low or high blood pressure, "
-              "slow or fast heart rate, shortness of breath,  "
-              "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, "
-              "pressure in/behind the eyes, deteriorating vision, floaters, cataracts.")
-        main.score -= 5
+    answer_b = "Okay, turn it on. But just so you know, electrical waves cause- \n" \
+               "headaches, dizziness, nausea, difficulty concentrating, \n" \
+               "memory loss, irritability, depression, anxiety, insomnia, fatigue, weakness, tremors, muscle spasms, \n" \
+               "numbness, tingling, altered reflexes, muscle and joint pain, \n" \
+               "leg/foot pain, “Flue-like” symptoms, fever, palpitations, \n" \
+               "arrhythmias, pain or pressure in the chest, low or high blood pressure, \n" \
+               "slow or fast heart rate, shortness of breath,  \n" \
+               "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, \n" \
+               "pressure in/behind the eyes, deteriorating vision, floaters, cataracts."
 
-    else:
-        print("Nice, you avoided the side effects of electrical waves, which by the way are- ")
-        print("headaches, dizziness, nausea, difficulty concentrating, "
-              "memory loss, irritability, depression, anxiety, insomnia, fatigue, weakness, tremors, muscle spasms, "
-              "numbness, tingling, altered reflexes, muscle and joint pain, "
-              "leg/foot pain, “Flue-like” symptoms, fever, palpitations, "
-              "arrhythmias, pain or pressure in the chest, low or high blood pressure, "
-              "slow or fast heart rate, shortness of breath,  "
-              "sinusitis, bronchitis, pneumonia, asthma, skin rash, itching, burning, facial flushing, pain or burning in the eyes, "
-              "pressure in/behind the eyes, deteriorating vision, floaters, cataracts.")
+    return (question, answer_a, answer_b)
 
 
 def question_5():
@@ -151,11 +178,18 @@ def question_5():
     #     print("What do you mean 'what else you want me to do'? I want you to think about the fact that "
     #           "In the last 40 years, paper usage has grown 400%. This means that over two million trees are felled every day for global paper consumption, "
     #           "meaning four billion trees are cut every year to serve our paper needs.")
+
     question = "UH looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it\n" \
                "A: Go to the floor recycling bin\n" \
                "B: Go to my trash can? What else you want me to do?"
 
-    return question
+    answer_a = "good, you just saved some trees"
+
+    answer_b = "What do you mean 'what else you want me to do'? I want you to think about the fact\n" \
+               " that In the last 40 years, paper usage has grown 400%. This means that over two million trees are felled every day for global paper consumption, \n" \
+               "meaning four billion trees are cut every year to serve our paper needs."
+
+    return (question, answer_a, answer_b)
 
 def question_6():
     question = "get in user!! we are going shopping!!!\n" \
@@ -168,8 +202,10 @@ def question_6():
     answer_b = "fast fashion? Did you know that according to the International Union for Conservation of Nature, " \
                "35 percent of microplastics that enter the ocean come from synthetic fibers.. I hope you picked up that plastic bug"
 
+    return (question, answer_a, answer_b)
 
 
-question_list = [question_1(), '', question_2(), '', question_3(), '']
+
+question_list = [question_1(), '', question_2(), '', question_3(),'', question_4(),'', question_5(),'',  question_6()]
 for ok in question_list:
     print(ok)
