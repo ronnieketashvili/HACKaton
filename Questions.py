@@ -19,13 +19,11 @@ def question_1():
     #           "and you couldn't be bothered to pick up one bag, not cool.")
     #     main.score -= 5
 
-    text_str = "Oh.. There some trash over there, what are you going to do with it?\n" \
+    question = "Oh.. There some trash over there, what are you going to do with it?\n" \
                 "A: Pick it up\n" \
                 "B: Leave it there\n" \
 
-    return text_str
-
-
+    return question
 
 def question_2():
     # print("Looks like you got back later than expected from your morning run. "
@@ -53,7 +51,7 @@ def question_2():
     #       "A: Cardboard cup\n"
     #       "B: Glass cup\n")
 
-    text_str = "Looks like you got back later than expected from your morning run.\n" \
+    question = "Looks like you got back later than expected from your morning run.\n" \
           "You don't have too much time to drink coffee, but at least you can\n" \
           "choose the cup you will drink it from.\n" \
           "A: Cardboard cup\n" \
@@ -64,25 +62,32 @@ def question_2():
     # if answer == 'b':
     #     main.score -= 5
 
-    return text_str
+    return question
 
 
 def question_3():
-    random_answer = ["About 11 million cars were designed to cheat air pollution tests, did you cheat yours?",
-                     "91% of the World’s Population Are Breathing in Polluted Air Every Day, happy to Happy to contribute?",
-                     "Air pollution makes climate change worse, not that its news to you, but have fun in your car"]
+    # random_answer = ["About 11 million cars were designed to cheat air pollution tests, did you cheat yours?",
+    #                  "91% of the World’s Population Are Breathing in Polluted Air Every Day, happy to Happy to contribute?",
+    #                  "Air pollution makes climate change worse, not that its news to you, but have fun in your car"]
+    #
+    # print("OK now you really don't have time, How are you going to get to work? "
+    #       "A: Your private car\n"
+    #       "B: Your bike\n")
+    # answer = Inputs.valid_answer()
+    #
+    # if answer == 'a':
+    #     print(random.choice(random_answer))
+    #     main.score -= 5
+    #
+    # else:
+    #     print("Diesel exhaust causes cancer, thanks for not using it.")
 
-    print("OK now you really don't have time, How are you going to get to work? "
-          "A: Your private car\n"
-          "B: Your bike\n")
-    answer = Inputs.valid_answer()
+    question = "OK now you really don't have time, How are you going to get to work?\n" \
+               "A: Your private car\n" \
+               "B: Your bike\n"
 
-    if answer == 'a':
-        print(random.choice(random_answer))
-        main.score -= 5
+    return question
 
-    else:
-        print("Diesel exhaust causes cancer, thanks for not using it.")
 
 
 def question_4():
@@ -119,3 +124,8 @@ def question_4():
 def question_5():
     print("UH looks like there was an error and your printer printed 647298473 extra pages. You need to get rid of it.\n"
           "A: go to my trash can? ")
+
+
+question_list = [question_1(), '', question_2(), '', question_3(), '']
+for ok in question_list:
+    print(ok)
